@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "注入JS",
+    "description": "注入JS",
+    "icons":{
+        "16": "inject.png",
+        "48": "inject.png",
+        "128": "inject.png"
+    },
+    "content_scripts": 
+    [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["js/inject.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": [ "tabs", "http://*/*", "https://*/*" ],
+    "web_accessible_resources": ["js/jquery-3.4.1.min.js"],
+    "version": "1.0"
+ }
+ 
