@@ -10,7 +10,7 @@
     "browser_action": {
         "default_icon": "inject.png",
         "default_popup": "popup.html",
-        "default_title": "繁体->简体"
+        "default_title": "注入js"
      },
     "permissions": [ "tabs", "http://*/*", "https://*/*" ],
     "web_accessible_resources": ["js/jquery-3.4.1.min.js"],
